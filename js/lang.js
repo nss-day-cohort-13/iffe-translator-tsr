@@ -1,5 +1,5 @@
 var language = (function() {
-
+  var text = [];
 
   return {
     setLanguage: function(userChoice) {
@@ -12,7 +12,8 @@ var language = (function() {
       }
     },
     setValue: function(userText) {
-      console.log(userText);
+      text = userText.split(' ');
+      console.log(text);
     }
 
   };

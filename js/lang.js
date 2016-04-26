@@ -3,15 +3,17 @@ var language = (function() {
 
   return {
     setLanguage: function(userChoice) {
-      if (userChoice === "Spanish")
+      if (userChoice === "Spanish") {
         console.log("Spanish");
-      if (userChoice === "German") {
+      } else if (userChoice === "German") {
         console.log("German");
       } else {
         console.log("Pig Latin");
       }
+    },
+    setValue: function(userText) {
+      console.log(userText);
     }
-
 
   };
 }());

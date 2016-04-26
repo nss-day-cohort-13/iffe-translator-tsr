@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*------ Form Validation -------*/
+
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:valid {
+  box-shadow: 0 0 5px 1px green;
+}

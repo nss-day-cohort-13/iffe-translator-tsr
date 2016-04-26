@@ -14,21 +14,18 @@
     <h2>Saying "Happy Holidays" in More Than Just English!</h2>
   </header>
 
-  <!-- FORM -->
-  <form method="get" class="form-container">
     <!-- User Input field for text prior to translation -->
-    <label for="user-language">Please input your holiday greeting:</label>
-    <textarea id="user-language" required></textarea>
-    <!-- User picks which language the input will be translated to -->
-    <label for="language-type">Which language would you like to translate to?</label>
-    <select id="language-type" size="1">
-      <option value="Spanish">Spanish</option>
-      <option value="German">German</option>
-      <option value="Pig-Latin">Pig-Latin</option>
-    </select>
-    <!-- submit event-handler will pull from here -->
-    <button type="submit" id="translate-button">Translate!</button>
-  </form>
+  <label for="user-language">Please input your holiday greeting:</label>
+  <textarea id="user-language"></textarea>
+  <!-- User picks which language the input will be translated to -->
+  <label for="language-type">Which language would you like to translate to?</label>
+  <select id="language-type" size="1">
+    <option value="Spanish">Spanish</option>
+    <option value="German">German</option>
+    <option value="Pig-Latin">Pig-Latin</option>
+  </select>
+  <!-- submit event-handler will pull from here -->
+  <button id="translate-button">Translate!</button>
 
   <!-- TRANSLATED TEXT CONTAINER DIV -->
   <div id="translated-lang"></div>

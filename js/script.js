@@ -3,8 +3,8 @@ var userChoice = document.getElementById("language-type");
 var textDump = document.getElementById("translated-lang");
 // remove .innerHTML above
 
-document.addEventListener("keyup", function(e) {
-  if (e.keyCode === 13) {
+document.addEventListener("keypress", function(event) {
+  if (event.keyCode === 13) {
     textDump.innerHTML = language.setLanguage(userChoice.value, userText.value);
     // language.setValue(userText.value);
   }

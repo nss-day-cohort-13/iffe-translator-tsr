@@ -1,5 +1,5 @@
-var language = (function(germanLanguage) {
-  var german = {
+var german =(function(language) {
+  var translations = {
     "merry": "fröhlich",
     "christmas": "Weihnachten",
     "happy": "glücklich",
@@ -23,28 +23,27 @@ var language = (function(germanLanguage) {
     "a": "ein",
     "and": "und",
   }
+
+
   var translatedPhrase = [];
 
-  germanLanguage.getGerman = function(englishPhrase) { //shows spanish in lang on main, shows array on conlog
-
-//run here
-    // console.log("show user input.. ", englishPhrase );
-    //converts userinput to lowercase
-
-    var updated = englishPhrase.map(function(lowerCase) {
-      return lowerCase.toLowerCase();
+  language.getGerman = function(text) {
+    console.log("this is text", text);
+    var adjustedText = text.map(function(value) {
+      console.log(value.toLowerCase())
+      return value.toLowerCase();
     });
-      // console.log("lets see", updated );
+    // var translatedPhrase = Object.keys(translations).filter(function(compare) {
+    //   return adjustedText.indexOf(compare) !== -1;
+    // })
 
-    //compare spanishkeys array with updated
-    var translatedPhrase = Object.keys(german).filter(function(compare) {
-      return updated.indexOf(compare) !== -1;
-    }).map(function(value, index) {
-      return german[value];
-    // console.log("common words", translatedPhrase);
+    // add 'var translatedPhrase = adjustedText' before map on the line below
+    var translatedPhrase = adjustedText.map(function(value, index) {
+      return translations[value];
     });
     var stringPhrase = translatedPhrase.join(" ");
-    console.log("final german phrase", stringPhrase);
+    console.log("final german", stringPhrase);
+    return stringPhrase;
   }
-  return germanLanguage;
-})(language);
+  return language;
+}(language));

@@ -1,30 +1,25 @@
-var language = (function(spanishLanguage) {
+var language = (function(language) {
   var spanish = {"merry":"algre", "christmas":"Navidad", "happy":"contento", "new":"Nuevo", "Year":"anos", "and":"y", "a":"un", "kwanzaa":"Kwanzaa", "Hanukkah":"januca", "holiday":"fiesta", "seasons":"Estaciones", "greetings":"saludos", "have":"tene", "wish":"deseo", "yourself":"tu mismo", "i":"yo", "we":"nosotros", "you":"tu", "family":"familia", "very":"muy", "love":"amor", "your":"su", "to":"a"};
   // var englishPhrase = ["Merry", "test", "Christmas", "and", "a", "happy", "new", "year", "plane"];
   var translatedPhrase = [];
 
-  spanishLanguage.getSpanish = function(englishPhrase) { //shows spanish in lang on main, shows array on conlog
+  language.getSpanish = function(text) { //shows spanish in lang on main, shows array on conlog
 
-//run here
-    // console.log("show user input.. ", englishPhrase );
-    //converts userinput to lowercase
-
-    var updated = englishPhrase.map(function(lowerCase) {
-      return lowerCase.toLowerCase();
+    var adjustedText = text.map(function(value) {
+      return value.toLowerCase();
     });
       // console.log("lets see", updated );
 
     //compare spanishkeys array with updated
-    var translatedPhrase = Object.keys(spanish).filter(function(compare) {
-      return updated.indexOf(compare) !== -1;
-    }).map(function(value, index) {
+    var translatedPhrase = adjustedText.map(function(value, index) {
       return spanish[value];
     // console.log("common words", translatedPhrase);
     });
     var stringPhrase = translatedPhrase.join(" ");
     console.log("final spanish phrase", stringPhrase);
+    return stringPhrase
   }
-  return spanishLanguage;
+  return language;
 })(language);
 
 

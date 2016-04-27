@@ -3,7 +3,18 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 20px;
+  padding: 20px;
+  font-size: 1.5em;
+  font-family: 'Fira Sans' sans-serif;
 }
 
+#translated-lang {
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 3em;
+  padding-top: 20px;
+}
+
+#user-language {
+  font-size: 1em;
+}

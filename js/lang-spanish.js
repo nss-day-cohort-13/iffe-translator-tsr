@@ -1,5 +1,5 @@
 var language = (function(language) {
-  var spanish = {"merry":"algre", "christmas":"Navidad", "happy":"contento", "new":"Nuevo", "Year":"anos", "and":"y", "a":"un", "kwanzaa":"Kwanzaa", "Hanukkah":"januca", "holiday":"fiesta", "seasons":"Estaciones", "greetings":"saludos", "have":"tene", "wish":"deseo", "yourself":"tu mismo", "i":"yo", "we":"nosotros", "you":"tu", "family":"familia", "very":"muy", "love":"amor", "your":"su", "to":"a"};
+  var spanish = {"merry":"Algre", "christmas":"Navidad", "happy":"Contento", "new":"Nuevo", "Year":"anos", "and":"y", "a":"un", "kwanzaa":"Kwanzaa", "hanukkah":"Januca", "holiday":"fiesta", "seasons":"Estaciones", "greetings":"saludos", "have":"tene", "wish":"deseo", "yourself":"tu mismo", "i":"yo", "we":"nosotros", "you":"tu", "family":"familia", "very":"muy", "love":"amor", "your":"su", "to":"a"};
   // var englishPhrase = ["Merry", "test", "Christmas", "and", "a", "happy", "new", "year", "plane"];
   var translatedPhrase = [];
 

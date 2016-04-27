@@ -5,6 +5,7 @@ var textDump = document.getElementById("translated-lang");
 
 document.addEventListener("keypress", function(event) {
   if (event.keyCode === 13) {
+    event.preventDefault();
     textDump.innerHTML = language.setLanguage(userChoice.value, userText.value);
     // language.setValue(userText.value);
   }

@@ -1,20 +1,24 @@
 var language = (function() {
-  var text = [];
+var text = [];
 
   return {
-    setLanguage: function(userChoice) {
+    setLanguage: function(userChoice, userText) {
       if (userChoice === "Spanish") {
-        console.log("Spanish");
+        text = userText.split(' ');
+        language.getSpanish(text);
+
       } else if (userChoice === "German") {
-        console.log("German");
+        text = userText.split(' ');
+        language.getGerman(text);
+
       } else {
-        console.log("Pig Latin");
+        text = userText.split(' ');
+        language.getPigLatin(text);
       }
     },
-    setValue: function(userText) {
-      text = userText.split(' ');
-      console.log(text);
-    }
+
 
   };
 }());
+
+console.log("show lang", language ); //show but now 2nd page

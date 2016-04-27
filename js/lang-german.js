@@ -6,7 +6,7 @@ var german =(function(language) {
     "new": "neu",
     "year": "jahr",
     "kwanzaa": "kwanzaa",
-    "hanukah": "hanukkah",
+    "hanukkah": "hanukkah",
     "holidays": "ferien",
     "holiday": "urlaub",
     "seasons": "jahreszeiten",

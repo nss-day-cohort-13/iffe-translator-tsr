@@ -3,18 +3,20 @@ var text = [];
 
   return {
     setLanguage: function(userChoice, userText) {
+      var transPhrase = "";
       if (userChoice === "Spanish") {
         text = userText.split(' ');
-        language.getSpanish(text);
+        transPhrase = language.getSpanish(text);
 
       } else if (userChoice === "German") {
         text = userText.split(' ');
-        language.getGerman(text);
+        transPhrase = language.getGerman(text);
 
       } else {
         text = userText.split(' ');
-        language.getPigLatin(text);
+        transPhrase = language.getPigLatin(text);
       }
+      return transPhrase;
     },
 
 
